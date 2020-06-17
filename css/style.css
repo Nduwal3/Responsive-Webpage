@@ -44,9 +44,13 @@ main{
   font-size: 42px;
 }
 
+.header-content h2 {
+  margin-bottom: 3vh;
+}
+
 .header-content h2 span{
   color: #f1c11a;
-  line-height: 100px;
+  line-height: 1.5;
 }
 
 .btn{
@@ -82,7 +86,7 @@ main{
 }
 
 .intro-content{
-  height: 50vh;
+  height: fit-content;
   display: flex;
   flex-wrap: wrap;
 }
@@ -99,9 +103,9 @@ main{
 
 .services{
   background-color: #f1c11a;
-  height: 50vh;
-  clip-path: polygon(0 0, 15% 0, 50% 20%, 85% 0, 100% 0, 100% 100%, 0 100%, 0 0);
-  margin-top: -15vh;
+  height: fit-content;
+  clip-path: polygon(0 0, 15% 0, 50% 15%, 85% 0, 100% 0, 100% 100%, 0 100%, 0 0);
+  margin-top: -20vh;
 }
 
 .service-content{
@@ -164,7 +168,6 @@ footer{
 
   .intro-content{
     display: block;
-    height: 90vh;
   }
 
   .intro-content div{
@@ -172,8 +175,9 @@ footer{
   }
 
   .services{
-    height: 100vh;
+    padding-bottom: 5vh;
     clip-path: polygon(0 0, 15% 0, 50% 5%, 85% 0, 100% 0, 100% 100%, 0 100%, 0 0);
+    margin-top: -15vh;
   }
 
   .service-content{
@@ -194,7 +198,7 @@ footer{
   }
 
   .header{
-    line-height: 1;
+    line-height: 1.5;
   } 
 
   .header-content h1, .intro-content h1, .contact-section h1{
@@ -208,12 +212,9 @@ footer{
   }
 
   .header-content h2{
-    margin-bottom: 10vh;
+    margin-bottom: 3vh;
   }
 
-  .header-content span{
-    line-height: 1.5 !important;    
-  }
 
   .header-content a{
     margin-bottom: 10px;
@@ -235,7 +236,6 @@ footer{
   }
 
   .intro-content{
-    height: fit-content;
     text-align: center;
   }
 
@@ -244,7 +244,6 @@ footer{
   }
 
   .services{
-    height: fit-content;
     padding-bottom: 10px;
     clip-path: polygon(0 0, 15% 0, 50% 3%, 85% 0, 100% 0, 100% 100%, 0 100%, 0 0)
   }
@@ -270,4 +269,4 @@ footer{
   .contact{
     padding: 5vh 0 10vh;
   }
-} 
+}
